@@ -1,0 +1,90 @@
+*{
+    padding:0px;
+    margin: 0px;
+    font-family: "poppins",sans-serif;
+  }
+  
+  body{
+    /* background-color: aquamarine; */
+    background-image: url('https://wallpaperaccess.com/full/1540001.jpg');
+    background-repeat: no-repeat;
+    background-size:100% 100%;
+    background-size:cover;
+  }
+  
+  .container{
+    background-color: rgb(110, 107, 107);
+    width: 60vw;
+    max-width: 35.5em;
+    padding: 2em 2em;
+    position:sticky;
+    transform: translate(-50%,-50%0);
+    margin-left: 10px;
+    margin-top: 10px;
+    }
+  
+  .search-wrapper{ 
+    display: grid;
+     grid-template-columns: 9fr 3fr;
+     gap: 1.00em;
+  }
+  
+   #search-btn{
+    font-size: 1em;
+    background-color: #3d64e6;
+    color: #0a0a0a;
+    padding: 0.5em 0;
+    border:5px solid;
+    }
+  
+    .search-wrapper input{
+      font-size: 2em;
+      padding: 0 .62em;
+      border:  5px solid#000208;
+      color: #0c0c0c;
+    }
+  
+    #result{
+      margin-top: 1.25em;
+    }
+    .container .flag-img{
+      display: block;
+      width: 45%;
+     min-width: 7.5em;
+     margin: 1.8rem auto 1.2em auto;
+    }
+    .container h2{
+      font-weight: 600;
+      color: #000208;
+      text-align: center;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      margin-bottom: 1.8em;
+    }
+    .data-wrapper{
+      margin-bottom: 1em;
+    }
+    .container h4{
+      display: inline;
+      font-weight: 300;
+      color: #000208;
+  
+    }
+    .container span{
+      color: #01030c;
+    }
+  .container h3{
+    text-align: center;
+    font-size: 1.2em;
+    font-weight: 400;
+    color: rgb(5, 5, 5);
+  }
+  .weather{
+    padding-top:20px ;
+    border-color: black;
+    border-style:double;
+    font-size:medium;
+    text-align: center;
+    
+  }
+  

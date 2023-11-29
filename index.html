@@ -1,39 +1,55 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <!-- bootstrap css link -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
-  <!-- bootstrap icon link -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
-   <!-- linked the css file -->
-  <link rel="stylesheet" href="./weather.css">
+	<title>Weather API</title>
+	<style type="text/css">
+		h1{
+			border: 2px solid;
+			text-align: center;
+			background-color: skyblue;
+			padding-top: 5%; 
+			padding-bottom: 5%; 
+		}
+		#city,#country{
+			width:15%;
+			border: 2px solid black;
+			padding: 10px;
+		}
+		div{
+			display: block;
+		}
+		div label{
+			display: block;
+		}
+		label,.note{
+			display: inline-block;
+		}
+	</style>
+	<script type="text/javascript" src='weatherApi.js'></script>
 </head>
 <body>
-  <!-- Extracted a container from the bootstrap -->
-  <div class="container">          
-    <div class="search-wrapper">
-  <!-- Created an iput box to get the input -->
-      <input type="text"
-       id="country-inp"
-        placeholder="Enter a country name.."/>
-  <!-- Created a button to search for the weather  -->
-    <button id="search-btn"><b>Click for Weather</b></button>
-   </div>
-  
-   <div id="output"></div><br>
-   <div class="weather">
-   <div id="output1"></div></div>
-   
-   
-  </div>
-  
-  </div>
-  
-  
-  <script src="./weather.js"></script>
+	<div>
+		<h1>Welcome to Weather API testing</h1>
+	</div>
+	<div>
+			<div>
+				<label><p>City :</p></label>
+				<input type="text" id="city" placeholder="Enter City name">
+				<p class='note' style="color: red">Note : First letter should be in uppercase</p>
+			</div>
+			<div>
+				<label><p>Country: </p></label>
+				<input type="text" id="country" placeholder="Enter Country name">
+				<p class='note' style="color: red">Note : First letter should be in uppercase</p>
+			</div>
+			<div>
+				<label><p>Weather :</p></label>
+				<h3 id="weather"></h3>
+			</div>
+			<div>
+				<br>
+				<button onclick="search()">Search</button>
+			</div>
+	</div>
 </body>
 </html>
